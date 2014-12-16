@@ -10,9 +10,9 @@
 
 ;;From el-get-recipe.el:
 ;;We first look in `el-get-sources' then in each directory listed `el-get-recipe-path' in order."
-;;(add-to-list 'el-get-recipe-path "~/.emacs/el-get-recipes/")
+(add-to-list 'el-get-recipe-path "~/.emacs.d/el-get-recipes/")
 
 ;;What is init-<package> for?
 ;;(setq el-get-user-package-directory "~/.emacs.d/el-get-init-files/")
 
-(el-get 'sync)
+(el-get 'sync my:el-get-packages)

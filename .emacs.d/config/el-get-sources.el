@@ -1,0 +1,1 @@
+(setq my:el-get-packages '(smyx-theme))
