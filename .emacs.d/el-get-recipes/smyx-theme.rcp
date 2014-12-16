@@ -1,0 +1,7 @@
+(
+    :name smyx-theme
+    :type github  
+    :pkgname "tacit7/smyx"  
+    :features smyx-theme
+    :after (load-theme 'smyx t)         
+)
