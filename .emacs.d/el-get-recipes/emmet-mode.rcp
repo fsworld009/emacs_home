@@ -1,8 +1,10 @@
 (
     :name emmet-mode
     :type "github"
-    :pkgname "smihica/emmet-mode")
+    :pkgname "smihica/emmet-mode"
+    :features emmet-mode
     :after (progn
+        (add-hook 'sgml-mode-hook 'emmet-mode) ;; Auto-start on any markup modes
         (add-hook 'html-mode-hook 'emmet-mode)
         (add-hook 'css-mode-hook 'emmet-mode)
     )
