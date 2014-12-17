@@ -1,7 +1,7 @@
-;; theme
+;;; theme
 (add-to-list 'my:el-get-packages 'smyx-theme)
 
-;;evil
+;;;evil
 (add-to-list 'my:el-get-packages 'evil)
 (add-to-list 'my:el-get-packages 'evil-leader)
 (add-to-list 'my:el-get-packages 'ace-jump-mode)
@@ -9,10 +9,10 @@
 (add-to-list 'my:el-get-packages 'evil-matchit)
 (add-to-list 'my:el-get-packages 'evil-surround)
 
-;;add redo support
+;;;add redo support
 (add-to-list 'my:el-get-packages 'undo-tree)
 
-;;common minor modes
+;;;common minor modes
 (add-to-list 'my:el-get-packages 'helm)
 (add-to-list 'my:el-get-packages 'linum-relative)
 (add-to-list 'my:el-get-packages 'powerline)
@@ -21,11 +21,11 @@
 (add-to-list 'my:el-get-packages 'discover-my-major)
 (add-to-list 'my:el-get-packages 'golden-ratio)
 
-;;tags/project view
+;;;tags/project view
 (add-to-list 'my:el-get-packages 'sr-speedbar)
 
-;;auto completion
+;;;auto completion
 (add-to-list 'my:el-get-packages 'auto-complete)
 
-;;syntax checking
+;;;syntax checking
 (add-to-list 'my:el-get-packages 'flycheck)

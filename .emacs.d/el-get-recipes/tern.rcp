@@ -9,4 +9,6 @@
         (tern-ac-setup)
         (setq tern-command '("tern" "--no-port-file" "--persistent"))
     )
-) 
+)
+
+;;other dependencies: python2, node.js (with npm and these packages: 

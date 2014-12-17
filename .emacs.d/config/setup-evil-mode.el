@@ -1,11 +1,11 @@
-;;Evil mode settings
+;;;Evil mode settings
 (setq evil-leader/in-all-states 1)
 (global-evil-leader-mode)
 (evil-leader/set-leader ",")
 
 (evil-mode 1)
 
-;; hit esc to quit prompt, mini buffers, and evil emacs state
+;;; hit esc to quit prompt, mini buffers, and evil emacs state
 (defun minibuffer-keyboard-quit ()
   "Abort recursive edit.
 In Delete Selection mode, if the mark is active, just deactivate it;
@@ -25,7 +25,7 @@ then it takes a second \\[keyboard-quit] to abort the minibuffer."
 (global-set-key [escape] 'evil-exit-emacs-state)
 
 
-;;evil-leader bindings
+;;;evil-leader bindings
 (evil-leader/set-key ",w" 'evil-ace-jump-word-mode)
 (evil-leader/set-key ",l" 'evil-ace-jump-line-mode)
 (evil-leader/set-key ",c" 'evil-ace-jump-char-mode)
@@ -37,6 +37,6 @@ then it takes a second \\[keyboard-quit] to abort the minibuffer."
 (evil-leader/set-key "cr" 'comment-or-uncomment-region)
 (evil-leader/set-key "sc" 'evil-surround-change)
 (evil-leader/set-key "sd" 'evil-surround-delete)
-(evil-leader/set-key "ss" (lambda () (interactive) (call-interactively 'evil-surround-region))) ;;need improvement
+(evil-leader/set-key "ss" (lambda () (interactive) (call-interactively 'evil-surround-region))) ;need improvement
 (evil-leader/set-key "f" 'yafolding-discover)
 (evil-leader/set-key "ec" 'edit-color-stamp)

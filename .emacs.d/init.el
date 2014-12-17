@@ -11,10 +11,7 @@
 ;;el-get
 ;;list desired packages
 (setq my:el-get-packages '())
-;;common packages
 (load "~/.emacs.d/config/el-get-general")
-
-;;Front-end specific packages
 (load "~/.emacs.d/config/el-get-frontend")
 
 ;;required when requiring sr-speedbar
@@ -25,6 +22,7 @@
 
 ;;load general fixes/setups that cannot be done inside ':after' of el-get recipes
 (load "~/.emacs.d/config/fix-general")
+(load "~/.emacs.d/config/fix-frontend")
 
 ;;load evil mode settings and key bindings
-;;(load "~/.emacs.d/config/evil-mode-setting")
+(load "~/.emacs.d/config/setup-evil-mode")

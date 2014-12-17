@@ -14,3 +14,4 @@ flyspell
 org-mode
 do not display global minor mode
 css indentline=2
+use jsctags for javascript tagging

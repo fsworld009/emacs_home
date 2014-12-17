@@ -1,5 +1,7 @@
 ;;exec path
 (add-to-list 'exec-path "C:/Program Files (x86)/git/bin/")
+(add-to-list 'exec-path "~/node/")
+(add-to-list 'exec-path "~/ctags/")
 
 ;;environment variables
 
