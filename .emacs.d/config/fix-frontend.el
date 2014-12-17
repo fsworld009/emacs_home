@@ -15,3 +15,14 @@
 ;;add css support to speedbar
 (speedbar-add-supported-extension ".css")
 (add-to-list 'speedbar-fetch-etags-parse-list '("\\.css" . speedbar-parse-c-or-c++tag))
+
+;;force emmet-expand-preview, and go back to normal state so that undo-tree can capture states before and after expansion
+(defun emmet-expand-with-preview ()
+    (interactive)   
+    (emmet-expand-line 1)
+    (evil-normal-state)
+)
+(define-key evil-insert-state-map "\C-j" 'emmet-expand-with-preview )
+
+(add-hook 'emmet-mode-hook (lambda () (define-key emmet-mode-keymap (kbd "C-j") 'emmet-expand-with-preview) ) )
+(add-hook 'emmet-mode-hook (lambda () (define-key emmet-mode-keymap (kbd "<C-return>") 'emmet-expand-with-preview) ) )
