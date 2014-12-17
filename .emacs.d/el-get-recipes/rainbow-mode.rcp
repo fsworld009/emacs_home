@@ -1,0 +1,10 @@
+(
+    :name rainbow-mode
+    :type http
+    :url "http://git.savannah.gnu.org/cgit/emacs/elpa.git/plain/packages/rainbow-mode/rainbow-mode.el"
+    :features rainbow-mode
+    :after (progn
+        (add-hook 'css-mode-hook 'rainbow-mode)
+        (add-to-list 'auto-mode-alist '("\\-theme.el$" . (lambda () (rainbow-mode) (emacs-lisp-mode))))
+    )
+)

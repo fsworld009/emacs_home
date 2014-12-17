@@ -10,11 +10,12 @@
 
 ;;el-get
 ;;list desired packages
+(setq my:el-get-packages '())
 ;;common packages
-(load "~/.emacs.d/config/el-get-sources")
+(load "~/.emacs.d/config/el-get-general")
 
 ;;Front-end specific packages
-;;(load "~/.emacs.d/config/el-get-sources-frontend")
+(load "~/.emacs.d/config/el-get-frontend")
 
 ;;required when requiring sr-speedbar
 (load "~/.emacs.d/config/ad-advised-definition-p")

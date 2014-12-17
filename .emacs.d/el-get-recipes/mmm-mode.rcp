@@ -1,0 +1,12 @@
+(
+:name mmm-mode
+:type github
+:pkgname "purcell/mmm-mode"
+:features mmm-mode
+:after (progn
+        (setq mmm-global-mode 'maybe)
+        (mmm-add-mode-ext-class 'html-mode nil 'html-css)
+        (mmm-add-mode-ext-class 'html-mode nil 'html-js)
+    )
+  
+)

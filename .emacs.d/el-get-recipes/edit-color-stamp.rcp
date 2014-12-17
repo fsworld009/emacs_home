@@ -1,0 +1,7 @@
+(
+    :name edit-color-stamp
+    :type github
+    :pkgname "sabof/edit-color-stamp"
+    :features edit-color-stamp
+    :depends es-lib
+)

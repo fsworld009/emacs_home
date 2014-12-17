@@ -1,0 +1,12 @@
+(
+    :name tern
+    :type github
+    :pkgname "marijnh/tern"
+    :depends (auto-complete)
+    :load-path ("emacs")
+    :features (tern tern-auto-complete)
+    :after (progn
+        (tern-ac-setup)
+        (setq tern-command '("tern" "--no-port-file" "--persistent"))
+    )
+) 

@@ -1,5 +1,3 @@
-(setq my:el-get-packages '())
-
 ;; theme
 (add-to-list 'my:el-get-packages 'smyx-theme)
 
