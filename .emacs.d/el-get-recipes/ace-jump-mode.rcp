@@ -1,0 +1,7 @@
+(
+    :name ace-jump-mode
+    :type github
+    :pkgname "winterTTr/ace-jump-mode"
+    :features ace-jump-mode
+    :after (setq ace-jump-word-mode-use-query-char nil) ;;do not ask for any input in ace-jump-word mode       
+)

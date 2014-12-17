@@ -1,0 +1,7 @@
+(
+    :name evil-nerd-commenter
+    :type github
+    :depends (evil evil-leader)
+    :pkgname "redguardtoo/evil-nerd-commenter"
+    :features evil-nerd-commenter
+)

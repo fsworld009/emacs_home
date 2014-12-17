@@ -1,0 +1,8 @@
+(
+    :name evil-surround
+    :type github
+    :depends evil
+    :pkgname "timcharper/evil-surround"
+    :features evil-surround
+    :after (global-evil-surround-mode 1)      
+)

@@ -1,0 +1,8 @@
+(
+    :name evil-matchit
+    :type github
+    :depends evil
+    :pkgname "redguardtoo/evil-matchit"
+    :features evil-matchit
+    :after (global-evil-matchit-mode 1)
+)

@@ -1,0 +1,6 @@
+(
+    :name evil
+    :type git
+    :url "git://gitorious.org/evil/chrisdunders-evil.git"  
+    :features evil
+)
