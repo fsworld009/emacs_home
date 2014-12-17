@@ -11,5 +11,8 @@
 (add-to-list 'my:el-get-packages 'evil-matchit)
 (add-to-list 'my:el-get-packages 'evil-surround)
 
-;;common modes
+;;add redo support
+(add-to-list 'my:el-get-packages 'undo-tree)
 
+;;common modes
+(add-to-list 'my:el-get-packages 'helm)

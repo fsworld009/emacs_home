@@ -1,0 +1,7 @@
+(
+    :name undo-tree
+    :type git
+    :url "http://www.dr-qubit.org/git/undo-tree.git"
+    :features undo-tree
+    :after (global-undo-tree-mode 1)
+)
