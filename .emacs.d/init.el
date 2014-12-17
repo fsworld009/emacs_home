@@ -1,10 +1,20 @@
-;;exec path
 (print "Hello World")
-(add-to-list 'exec-path "C:/Program Files (x86)/git/bin/")
+
+;;exec path and environment variables
+(load "~/.emacs.d/config/path")
+
+
+
+;;load general setup
+(load "~/.emacs.d/config/setup-general")
 
 ;;el-get
 ;;list desired packages
+;;common packages
 (load "~/.emacs.d/config/el-get-sources")
+
+;;Front-end specific packages
+;;(load "~/.emacs.d/config/el-get-sources-frontend")
 
 ;;required when requiring sr-speedbar
 (load "~/.emacs.d/config/ad-advised-definition-p")
@@ -12,9 +22,8 @@
 ;;load/install el-get and packages
 (load "~/.emacs.d/config/el-get_init")
 
-;;load general settings
-
 ;;load general fixes/setups that cannot be done inside ':after' of el-get recipes
-;;(load "~/.emacs.d/config/general-fix")
+(load "~/.emacs.d/config/fix-general")
 
-;;load evil-mode and evil-leader custom key bindings
+;;load evil mode settings and key bindings
+;;(load "~/.emacs.d/config/evil-mode-setting")

@@ -21,10 +21,13 @@
 (add-to-list 'my:el-get-packages 'powerline-evil)
 (add-to-list 'my:el-get-packages 'indent-guide)
 (add-to-list 'my:el-get-packages 'discover-my-major)
-(add-to-list 'my:el-get-packages 'sr-speedbar)
 (add-to-list 'my:el-get-packages 'golden-ratio)
 
-;;auto completion
+;;tags/project view
+(add-to-list 'my:el-get-packages 'sr-speedbar)
 
+;;auto completion
+(add-to-list 'my:el-get-packages 'auto-complete)
 
 ;;syntax checking
+(add-to-list 'my:el-get-packages 'flycheck)

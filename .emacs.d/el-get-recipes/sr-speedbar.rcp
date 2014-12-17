@@ -8,8 +8,8 @@
     :after (progn
         (global-set-key (kbd "<f2>") 'sr-speedbar-toggle)
         (sr-speedbar-refresh-turn-on)
-        )
+    )
 )
 
 ;;With emacs 24.4+, ad-advised-definition-p function has been removed. You can add it back to fix the problem
-;; (function definition is put in ad-advised-definition-p.el)
+;;function definition is put in ad-advised-definition-p.el

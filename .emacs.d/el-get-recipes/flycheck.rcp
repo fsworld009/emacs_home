@@ -1,0 +1,7 @@
+(
+    :name flycheck
+    :type github
+    :pkgname "flycheck/flycheck"
+    :depends (s dash cl-lib f pkg-info)
+    :features flycheck
+)

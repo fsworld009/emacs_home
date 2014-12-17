@@ -1,0 +1,9 @@
+(
+    :name auto-complete
+    :type github
+    :depends popup
+    :pkgname "auto-complete/auto-complete"
+    :features auto-complete
+)
+
+;;setups are put in general-fix.el
