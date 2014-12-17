@@ -7,5 +7,6 @@ node/*
 .emacs.d/autosaves/*
 .emacs.d/auto-save-list/*
 .emacs.d/backups/*
+.emacs.d/ac-comphist.dat
 
 

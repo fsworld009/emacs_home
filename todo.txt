@@ -1,5 +1,3 @@
-refine config files
-
 autocomplete + css keywords
 how to use bookmarks/sessions
 
@@ -15,3 +13,4 @@ org-mode
 do not display global minor mode
 css indentline=2
 use jsctags for javascript tagging
+git integration
