@@ -1,0 +1,10 @@
+(
+    :name linum-relative
+    :type github
+    :pkgname "coldnew/linum-relative"
+    :feaures linum-relative
+    :after  (progn
+        (require 'linum-relative)
+        (global-set-key (kbd "<f3>") 'linum-relative-toggle)
+    )
+)

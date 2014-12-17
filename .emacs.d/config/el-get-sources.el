@@ -14,5 +14,17 @@
 ;;add redo support
 (add-to-list 'my:el-get-packages 'undo-tree)
 
-;;common modes
+;;common minor modes
 (add-to-list 'my:el-get-packages 'helm)
+(add-to-list 'my:el-get-packages 'linum-relative)
+(add-to-list 'my:el-get-packages 'powerline)
+(add-to-list 'my:el-get-packages 'powerline-evil)
+(add-to-list 'my:el-get-packages 'indent-guide)
+(add-to-list 'my:el-get-packages 'discover-my-major)
+(add-to-list 'my:el-get-packages 'sr-speedbar)
+(add-to-list 'my:el-get-packages 'golden-ratio)
+
+;;auto completion
+
+
+;;syntax checking

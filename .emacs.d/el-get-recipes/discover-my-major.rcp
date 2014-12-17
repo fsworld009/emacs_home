@@ -1,0 +1,8 @@
+(
+    :name discover-my-major
+    :type github
+    :pkgname "steckerhalter/discover-my-major"
+    :depends makey
+    :features discover-my-major
+    :after (global-set-key (kbd "<f1>") 'discover-my-major)
+)

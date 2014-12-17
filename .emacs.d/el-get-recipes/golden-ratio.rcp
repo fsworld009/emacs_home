@@ -1,0 +1,6 @@
+(
+    :name golden-ratio
+    :type github
+    :pkgname "roman/golden-ratio.el"
+    :after (golden-ratio-mode)
+)

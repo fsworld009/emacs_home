@@ -1,0 +1,10 @@
+(
+    :name indent-guide
+    :type github
+    :pkgname "zk-phi/indent-guide"
+    :features indent-guide
+    :after (progn
+        (indent-guide-global-mode)
+        (setq indent-guide-recursive t)
+    )
+)

@@ -1,0 +1,11 @@
+(
+    :name powerline-evil
+    :type github
+    :pkgname "raugturi/powerline-evil"
+    :depends (evil powerline)
+    :features powerline-evil
+    :after (progn
+        (powerline-evil-vim-color-theme)
+        (display-time-mode t)
+    )
+)
