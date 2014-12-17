@@ -1,1 +1,2 @@
-(setq my:el-get-packages '(smyx-theme))
+
+(add-to-list 'my:el-get-packages 'smyx-theme)
