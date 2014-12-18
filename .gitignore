@@ -5,6 +5,7 @@ node/*
 python2/*
 
 .emacs.d/el-get/*
+.emacs.d/server/
 .emacs.d/autosaves/*
 .emacs.d/auto-save-list/*
 .emacs.d/backups/*

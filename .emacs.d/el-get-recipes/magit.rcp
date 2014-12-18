@@ -1,0 +1,7 @@
+(
+    :name magit
+    :type "github"
+    :pkgname "magit/magit"
+    :features magit
+    :depends (cl-lib git-modes)
+)

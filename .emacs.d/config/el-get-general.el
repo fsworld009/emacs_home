@@ -29,3 +29,6 @@
 
 ;;;syntax checking
 (add-to-list 'my:el-get-packages 'flycheck)
+
+;;;git mode
+(add-to-list 'my:el-get-packages 'magit)
