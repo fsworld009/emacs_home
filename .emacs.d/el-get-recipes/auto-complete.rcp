@@ -4,6 +4,8 @@
     :depends popup
     :pkgname "auto-complete/auto-complete"
     :features auto-complete
+    :after (ac-config-default)
 )
 
-;;setups are put in general-fix.el
+;;;add dict folder: (add-to-list 'ac-dictionary-directories "~/.emacs.d/el-get/auto-complete/dict")
+;;;some setup are put in general-fix.el

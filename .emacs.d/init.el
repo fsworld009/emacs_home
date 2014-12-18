@@ -20,9 +20,12 @@
 ;;load/install el-get and packages
 (load "~/.emacs.d/config/el-get_init")
 
-;;load general fixes/setups that cannot be done inside ':after' of el-get recipes
+;;load fixes/extra setup that cannot be done inside ':after' of el-get recipes
 (load "~/.emacs.d/config/fix-general")
 (load "~/.emacs.d/config/fix-frontend")
+
+;;load global key bindings
+(load "~/.emacs.d/config/key-binding")
 
 ;;load evil mode settings and key bindings
 (load "~/.emacs.d/config/setup-evil-mode")

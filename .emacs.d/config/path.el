@@ -2,6 +2,7 @@
 (add-to-list 'exec-path "C:/Program Files (x86)/git/bin/")
 (add-to-list 'exec-path "~/node/")
 (add-to-list 'exec-path "~/ctags/")
+(add-to-list 'exec-path "~/python2/")
 
 ;;environment variables
 
