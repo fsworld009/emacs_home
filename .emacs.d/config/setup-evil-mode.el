@@ -40,3 +40,11 @@ then it takes a second \\[keyboard-quit] to abort the minibuffer."
 (evil-leader/set-key "ss" (lambda () (interactive) (call-interactively 'evil-surround-region))) ;need improvement
 (evil-leader/set-key "f" 'yafolding-discover)
 (evil-leader/set-key "ec" 'edit-color-stamp)
+
+;;;use Tab and S-Tab in insert mode
+(define-key evil-insert-state-map (kbd "TAB") 'evil-shift-right-line)
+(define-key evil-insert-state-map (kbd "<backtab>") 'evil-shift-left-line)
+
+;;;auto-indent when you hit RET in insert mode
+;;;https://gitorious.org/evil/evil/merge_requests/24
+(define-key evil-insert-state-map (kbd "RET") 'newline-and-indent)
