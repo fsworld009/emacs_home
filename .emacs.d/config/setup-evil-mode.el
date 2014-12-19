@@ -48,3 +48,37 @@ then it takes a second \\[keyboard-quit] to abort the minibuffer."
 ;;;auto-indent when you hit RET in insert mode
 ;;;https://gitorious.org/evil/evil/merge_requests/24
 (define-key evil-insert-state-map (kbd "RET") 'newline-and-indent)
+
+
+
+;;;; every copy/delete text operations override system clipboard, hence I disabled it
+;;;; and made a function to toggle system clipboard when needed
+;;;; http://stackoverflow.com/a/20888906/3973896
+(setq x-select-enable-clipboard nil)
+(defun evil-visual-update-x-selection (&optional buffer)
+  "Update the X selection with the current visual region."
+  (let ((buf (or buffer (current-buffer))))
+    (when (buffer-live-p buf)
+      (with-current-buffer buf
+        (when (and (evil-visual-state-p)
+                   (fboundp 'x-select-text)
+                   (or (not (boundp 'ns-initialized))
+                       (with-no-warnings ns-initialized))
+                   (not (eq evil-visual-selection 'block)))
+          ;; CHANGE
+          ;; ONLY call x-select-text if x-select-enable-clipboard is true
+          (if x-select-enable-clipboard
+              (x-select-text (buffer-substring-no-properties
+                              evil-visual-beginning
+                              evil-visual-end))))))))
+                              
+(defun toggle-clipboard ()
+    (interactive)
+    (if (equal x-select-enable-clipboard nil)
+        (progn (setq x-select-enable-clipboard t)   (princ "System Clipboard Enabled")  )
+        (progn (setq x-select-enable-clipboard nil) (princ "System Clipboard Disabled") )
+    )
+)
+
+;;;bind the key to F4
+(global-set-key (kbd "<f4>") 'toggle-clipboard)
