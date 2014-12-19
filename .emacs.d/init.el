@@ -3,11 +3,6 @@
 ;;exec path and environment variables
 (load "~/.emacs.d/config/path")
 
-
-
-;;load general setup
-(load "~/.emacs.d/config/setup-general")
-
 ;;el-get
 ;;list desired packages
 (setq my:el-get-packages '())
@@ -23,6 +18,10 @@
 ;;load fixes/extra setup that cannot be done inside ':after' of el-get recipes
 (load "~/.emacs.d/config/fix-general")
 (load "~/.emacs.d/config/fix-frontend")
+
+;;load general setup
+(load "~/.emacs.d/config/setup-general")
+(load "~/.emacs.d/config/setup-frontend")
 
 ;;load global key bindings
 (load "~/.emacs.d/config/key-binding")

@@ -1,12 +1,15 @@
+evil, auto indention when hit RET in insert mode
+evil, insert mode <backtab>
+
 evil register not interfere clipboard
 https://stackoverflow.com/questions/17127009/how-to-disable-emacs-evil-selection-auto-copies-to-clipboard/23254728#23254728
 http://www.codejury.com/bypassing-the-clipboard-in-emacs-evil-mode/
 
 emacs shell encoding
 folding
-buffer-move (swap buffer in diff windows)
+
 flyspell
 org-mode
 do not display global minor mode
-css indentline=2
-use jsctags for javascript tagging
+
+use jsctags for javascript tagging (seems impossible now)

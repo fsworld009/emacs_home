@@ -1,3 +1,6 @@
+;;set css indention to 2
+(setq css-indent-offset 2)
+
 ;;add css support for speedbar
 
 (speedbar-add-supported-extension ".css")
