@@ -20,6 +20,7 @@
 (add-to-list 'my:el-get-packages 'indent-guide)
 (add-to-list 'my:el-get-packages 'discover-my-major)
 (add-to-list 'my:el-get-packages 'golden-ratio)
+(add-to-list 'my:el-get-packages 'buffer-move)
 
 ;;;tags/project view
 (add-to-list 'my:el-get-packages 'sr-speedbar)
