@@ -6,3 +6,16 @@ org-mode
 do not display global minor mode
 
 use jsctags for javascript tagging (seems impossible now)
+
+
+
+(custom-set-variables
+    '(ispell-dictionary "british")
+    '(ispell-program-name "H:\\bin\\aspell\\bin\\aspell.exe"))
+    
+    
+      (add-to-list 'exec-path "C:/Program Files (x86)/Aspell/bin/")
+      
+      
+(defun turn-on-flyspell () (flyspell-mode 1))
+(add-hook 'find-file-hooks 'turn-on-flyspell)
