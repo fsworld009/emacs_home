@@ -1,13 +1,9 @@
 emacs shell encoding
 folding
-
-flyspell
 org-mode
 do not display global minor mode
 
 use jsctags for javascript tagging (seems impossible now)
-
-
 
 (custom-set-variables
     '(ispell-dictionary "british")

@@ -40,6 +40,7 @@ then it takes a second \\[keyboard-quit] to abort the minibuffer."
 (evil-leader/set-key "ss" (lambda () (interactive) (call-interactively 'evil-surround-region))) ;need improvement
 (evil-leader/set-key "f" 'yafolding-discover)
 (evil-leader/set-key "ec" 'edit-color-stamp)
+(evil-leader/set-key "!" 'flycheck-list-errors)
 
 ;;;use Tab and S-Tab in insert mode
 (define-key evil-insert-state-map (kbd "TAB") 'evil-shift-right-line)

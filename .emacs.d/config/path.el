@@ -4,6 +4,7 @@
 (add-to-list 'exec-path "~/ctags/")
 (add-to-list 'exec-path "~/python2/")
 (add-to-list 'exec-path "~/Aspell/bin/")
+(add-to-list 'exec-path "~/tidy/")
 
 ;;environment variables
 (setenv "GIT_ASKPASS" "git-gui--askpass")

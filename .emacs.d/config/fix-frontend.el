@@ -8,11 +8,13 @@
 ;;; more information on how node.js search for dependencies: 
 ;;; http://www.bennadel.com/blog/2169-where-does-node-js-and-require-look-for-modules.htm
 
-
+;;; flycheck hooks
 (add-hook 'js-mode-hook (lambda () (flycheck-mode t)))
 (add-hook 'js-mode-hook (lambda () (tern-mode t)))
+(add-hook 'css-mode-hook (lambda () (flycheck-mode t)))
+(add-hook 'html-mode-hook (lambda () (flycheck-mode t)))
 
-;;add css support to speedbar
+;; add css support to speedbar
 (speedbar-add-supported-extension ".css")
 (add-to-list 'speedbar-fetch-etags-parse-list '("\\.css" . speedbar-parse-c-or-c++tag))
 

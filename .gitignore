@@ -4,6 +4,7 @@ git/*
 node/*
 python2/*
 Aspell/*
+tidy/*
 
 .emacs.d/el-get/*
 .emacs.d/server/
