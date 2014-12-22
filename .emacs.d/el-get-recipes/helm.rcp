@@ -6,7 +6,7 @@
     :after ( progn
         (global-set-key (kbd "M-x") 'helm-M-x)
         (global-set-key (kbd "<f8>") 'helm-find-files)
-        (global-set-key (kbd "<f7>") 'helm-buffers-list)
+        (global-set-key (kbd "<f9>") 'helm-buffers-list)
         (global-set-key (kbd "<f6>") 'helm-imenu)
     )
 )

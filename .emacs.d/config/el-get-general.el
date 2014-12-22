@@ -33,7 +33,7 @@
 
 ;;;spell check
 ;;;Emacs 24+ has fly-spell built in
-(add-to-list 'my:el-get-packages 'flyspell-lazy)
+;;;(add-to-list 'my:el-get-packages 'flyspell-lazy)
 
 ;;;git mode
 (add-to-list 'my:el-get-packages 'magit)

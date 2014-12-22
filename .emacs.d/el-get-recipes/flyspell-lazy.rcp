@@ -5,7 +5,6 @@
        :depends auto-complete
        :after (progn
             (require 'flyspell)
-            (ac-flyspell-workaround)
             (flyspell-lazy-mode 1)
        )
 )

@@ -3,6 +3,7 @@
 (add-to-list 'exec-path "~/node/")
 (add-to-list 'exec-path "~/ctags/")
 (add-to-list 'exec-path "~/python2/")
+(add-to-list 'exec-path "~/Aspell/bin/")
 
 ;;environment variables
 

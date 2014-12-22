@@ -4,7 +4,10 @@
     :depends popup
     :pkgname "auto-complete/auto-complete"
     :features auto-complete
-    :after (ac-config-default)
+    :after (progn
+        (ac-config-default)
+        (ac-flyspell-workaround)
+    )
 )
 
 ;;;add dict folder: (add-to-list 'ac-dictionary-directories "~/.emacs.d/el-get/auto-complete/dict")

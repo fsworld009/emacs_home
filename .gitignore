@@ -3,6 +3,7 @@ ctags/*
 git/*
 node/*
 python2/*
+Aspell/*
 
 .emacs.d/el-get/*
 .emacs.d/server/
@@ -10,6 +11,10 @@ python2/*
 .emacs.d/auto-save-list/*
 .emacs.d/backups/*
 .emacs.d/ac-comphist.dat
+
+
+en.prepl
+en.pws
 
 
 

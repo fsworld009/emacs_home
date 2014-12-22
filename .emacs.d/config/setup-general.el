@@ -34,3 +34,20 @@
 ;;;let speedbar use Exuberant Ctags
 (setq speedbar-fetch-etags-command "ctags")
 (setq speedbar-fetch-etags-arguments '("-e" "-f" "-"))
+
+;;;let flyspell uses aspell
+(require 'ispell)
+(setq ispell-dictionary "english")
+(setq ispell-program-name "aspell.exe")
+
+;;;manually point to dict/data dir, because I cannot compile aspell with desired data/dict folder under Windows
+(princ (concat "--data-dir=" (getenv "HOME") "Aspell\\data") )
+(add-to-list 'ispell-extra-args (concat "--data-dir=" (getenv "HOME") "Aspell\\data") )
+(add-to-list 'ispell-extra-args (concat "--dict-dir=" (getenv "HOME") "Aspell\\dict") )
+
+;;;flyspell-buffer will find mispelled word without any command
+(add-hook 'flyspell-mode-hook 'flyspell-buffer)
+
+;;;not used options, but comment it here anyway: https://gist.github.com/cbilson/5910672
+;;;(add-to-list 'ispell-local-dictionary-alist '("en_US" "[[:alpha:]]" "[^[:alpha:]]" "[']" nil ("-B") nil iso-8859-1))
+;;;(setq ispell-personal-dictionary "C:/Users/bilsonc/.ispell") 

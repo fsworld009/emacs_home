@@ -19,3 +19,6 @@ use jsctags for javascript tagging (seems impossible now)
       
 (defun turn-on-flyspell () (flyspell-mode 1))
 (add-hook 'find-file-hooks 'turn-on-flyspell)
+
+
+https://github.com/syohex/emacs-ac-ispell

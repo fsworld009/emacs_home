@@ -11,6 +11,10 @@
           (setq evil-shift-width 2))))
 
 
+(add-hook 'js-mode-hook 'flyspell-prog-mode)
+(add-hook 'html-mode-hook 'flyspell-prog-mode)
+;;;(add-hook 'html-mode-hook '(lambda () (setq 'ispell-skip-html t)))
+(add-hook 'css-mode-hook 'flyspell-prog-mode)
 
 ;;add css support for speedbar
 
