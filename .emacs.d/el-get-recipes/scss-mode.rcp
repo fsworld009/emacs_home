@@ -1,0 +1,6 @@
+(
+    :name scss-mode
+    :type github
+    :pkgname "antonj/scss-mode"  
+    :features scss-mode
+)

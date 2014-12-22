@@ -12,3 +12,5 @@
 (add-to-list 'my:el-get-packages 'edit-color-stamp)
 
 (add-to-list 'my:el-get-packages 'tern)
+
+(add-to-list 'my:el-get-packages 'scss-mode)

@@ -5,6 +5,8 @@
 (add-to-list 'exec-path "~/python2/")
 (add-to-list 'exec-path "~/Aspell/bin/")
 (add-to-list 'exec-path "~/tidy/")
+(add-to-list 'exec-path "~/ruby/bin/")
+(setenv "PATH" (concat (getenv "PATH") ";" (getenv "HOME") "\\ruby\\bin") )
 
 ;;environment variables
 (setenv "GIT_ASKPASS" "git-gui--askpass")

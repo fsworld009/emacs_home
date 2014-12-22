@@ -16,3 +16,6 @@
                                                  ; on windows.
 (server-start)
 
+
+;;;enable flyspell when editing git commit messages
+(add-hook 'git-commit-mode-hook 'flyspell-mode)

@@ -5,6 +5,7 @@ node/*
 python2/*
 Aspell/*
 tidy/*
+ruby/*
 
 .emacs.d/el-get/*
 .emacs.d/server/

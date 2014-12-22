@@ -13,6 +13,12 @@
 (set-terminal-coding-system 'utf-8)
 (set-selection-coding-system 'utf-8)
 
+;;I'm using zh-tw windows, set this to display Chinese output in shell correctly
+;;no effect, unknown reason
+;;;(require 'shell)
+;;;(add-hook 'shell-mode-hook '(set-language-environment 'Chinese-BIG5))
+;;;(add-hook 'shell-mode-hook 'ansi-color-for-comint-mode-on)
+
 ;;;highlight parenthesis
 (show-paren-mode 1)
 (setq show-paren-delay 0)
