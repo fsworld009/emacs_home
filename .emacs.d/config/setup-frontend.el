@@ -16,9 +16,10 @@
 ;;;(add-hook 'html-mode-hook '(lambda () (setq 'ispell-skip-html t)))
 (add-hook 'css-mode-hook 'flyspell-prog-mode)
 
-;;add css support for speedbar
+;;add scss/css support for speedbar
 
 (speedbar-add-supported-extension ".css")
-(setq speedbar-fetch-etags-command "ctags")
-(setq speedbar-fetch-etags-arguments '("-e" "-f" "-"))
 (add-to-list 'speedbar-fetch-etags-parse-list '("\\.css" . speedbar-parse-c-or-c++tag)) 
+
+(speedbar-add-supported-extension ".scss")
+(add-to-list 'speedbar-fetch-etags-parse-list '("\\.scss" . speedbar-parse-c-or-c++tag)) 

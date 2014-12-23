@@ -83,3 +83,10 @@ then it takes a second \\[keyboard-quit] to abort the minibuffer."
 
 ;;;bind the key to F4
 (global-set-key (kbd "<f4>") 'toggle-clipboard)
+
+
+;;;j/k for browsing wrapped lines
+(define-key evil-normal-state-map (kbd "j") 'evil-next-visual-line)
+(define-key evil-normal-state-map (kbd "k") 'evil-previous-visual-line)
+(define-key evil-normal-state-map (kbd "<down>") 'evil-next-visual-line)
+(define-key evil-normal-state-map (kbd "<up>") 'evil-previous-visual-line)

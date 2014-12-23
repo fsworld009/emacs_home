@@ -19,3 +19,10 @@
 
 ;;;enable flyspell when editing git commit messages
 (add-hook 'git-commit-mode-hook 'flyspell-mode)
+
+;;;Diminish
+(diminish 'undo-tree-mode)
+(diminish 'auto-complete-mode)
+(diminish 'golden-ratio-mode)
+(diminish 'indent-guide-mode)
+(diminish 'magit-auto-revert-mode)

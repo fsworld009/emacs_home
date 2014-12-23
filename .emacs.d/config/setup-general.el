@@ -57,3 +57,9 @@
 ;;;not used options, but comment it here anyway: https://gist.github.com/cbilson/5910672
 ;;;(add-to-list 'ispell-local-dictionary-alist '("en_US" "[[:alpha:]]" "[^[:alpha:]]" "[']" nil ("-B") nil iso-8859-1))
 ;;;(setq ispell-personal-dictionary "C:/Users/bilsonc/.ispell") 
+
+
+;;;smooth scrolling
+(setq scroll-margin 5
+scroll-conservatively 9999
+scroll-step 1)

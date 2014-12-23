@@ -4,5 +4,5 @@
     :pkgname "magit/magit"
     :features magit
     :depends (cl-lib git-modes)
-    :after (global-set-key (kbd "<f2>") 'magit-status)
+    :after (global-set-key (kbd "<f12>") 'magit-status)
 )

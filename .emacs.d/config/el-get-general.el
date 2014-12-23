@@ -37,3 +37,6 @@
 
 ;;;git mode
 (add-to-list 'my:el-get-packages 'magit)
+
+;;;clean up status bar
+(add-to-list 'my:el-get-packages 'diminish)
