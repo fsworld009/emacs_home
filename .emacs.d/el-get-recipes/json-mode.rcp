@@ -1,0 +1,7 @@
+(
+    :name json-mode
+    :type github
+    :pkgname "joshwnj/json-mode"
+    :depends (json-snatcher json-reformat)
+    :features json-mode
+)

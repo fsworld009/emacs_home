@@ -13,6 +13,7 @@
 (add-hook 'js-mode-hook (lambda () (tern-mode t)))
 (add-hook 'css-mode-hook (lambda () (flycheck-mode t)))
 (add-hook 'html-mode-hook (lambda () (flycheck-mode t)))
+(add-hook 'json-mode-hook (lambda () (flycheck-mode t)))
 
 ;; add css support to speedbar
 (speedbar-add-supported-extension ".css")

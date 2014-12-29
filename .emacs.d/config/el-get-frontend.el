@@ -14,3 +14,5 @@
 (add-to-list 'my:el-get-packages 'tern)
 
 (add-to-list 'my:el-get-packages 'scss-mode)
+
+(add-to-list 'my:el-get-packages 'json-mode)

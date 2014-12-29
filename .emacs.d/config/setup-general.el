@@ -63,3 +63,7 @@
 (setq scroll-margin 5
 scroll-conservatively 9999
 scroll-step 1)
+
+
+;;;no toolbar
+(tool-bar-mode -1)
